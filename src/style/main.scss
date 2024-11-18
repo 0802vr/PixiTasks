@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+ 
+@font-face {
+  font-family: 'Fifacks';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../font/Fifaks10Dev1.ttf");
+   
+}
+@font-face {
+  font-family: 'Fairfax';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../font/Fairfax.ttf");
+   
+}
+:root {
+  font-family:Fifacks, Rubik, Fairfax;
+  line-height: 1.5;
+  font-weight: 400;
+  /* color-scheme: light dark; */
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  /* font-synthesis: none;
+  text-rendering: optimizeLegibility; */
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  cursor: url(../assets/cursor/1.png), auto;
+}
+body::-webkit-scrollbar {
+  width: 11px; /* ширина скролл-бара */
+  background-color: #121212; 
+  cursor: url(../assets/cursor/1.png), auto;/* цвет фона полосы скролла */
+}
+
+body::-webkit-scrollbar-thumb {
+  width: 7px; /* ширина ползунка */
+  background-color: #34D3D7; /* синий цвет ползунка */
+  
+}
+
+/* Убираем ненужные стили по умолчанию для Firefox */
+/* body {
+  scrollbar-width: thin;  
+  scrollbar-color: #34D3D7 #121212;  
+} */
+html, body {
+  cursor: url(../assets/cursor/1.png), auto;
+}
+/* Курсор с указателем */
+a, button {
+  cursor: url(../assets/cursor/2.png), auto;  /* Указываем координаты горячей точки */
+}
+.custom-scroll {
+  scrollbar-width: thin; /* Для Firefox */
+  scrollbar-color: #34D3D7 #121212; /* Цвет ползунка и фона */
+}
+ 
+.noise-block {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  margin-top: -119px;
+  z-index: 2;
+}
+.noise-blockFooter {
+ /*  margin-top: 0;
+  margin-bottom: -118px; */
+  .pixel {
+     
+    aspect-ratio: 1 / 1;
+    background-color: #202020;
+    border: 1px solid #202020;     
+    transition: all 0.2s linear;
+    opacity: 0;
+  }
+}
+.noise-blockMain {
+  .pixel {
+     
+    background-color: #191919;
+    border: 1px solid #191919;     
+    
+  }
+}
+.track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+ 
+.pixel {
+  width: 2%;
+  aspect-ratio: 1 / 1;
+  background-color: #121212;
+  border: 1px solid #121212;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.sectionMainMargin {
+  /* max-width: 1400px; */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+   
+} 
+ 
+ @media (max-width:1000px) {
+  .noise-block {
+    height: 10vw;
+    margin-top: -10vw;
+  }
+  .pixel {
+    width: 5%;
+  }
+ }
+ @media (max-width:568px) {
+  .noise-block {
+    height: 15vw;
+    margin-top: -15vw;
+  }
+ }
+  

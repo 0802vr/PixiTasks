@@ -1,0 +1,68 @@
+ 
+  @function adaptive-margin($min, $max) {
+    
+    $min-width: 1440px;
+    $max-width: 1920px;
+    $min-w: 1440;
+    $max-w: 1920;
+     
+     
+    @return calc(#{$min}px + (#{($max - $min)} * ((100vw - #{$min-width}) / (#{$max-w} - #{$min-w}))));
+  }
+
+ 
+
+@function adaptive-marginPl($min, $max) {
+   
+    $min-width: 1340px;
+    $max-width: 980px;
+    $min-w: 1340;
+    $max-w: 980;
+  
+     
+    @return calc(#{$min}px + (#{($max - $min)} * ((100vw - #{$min-width}) / (#{$max-w} - #{$min-w}))));
+  }
+@function adaptive-marginPh($min, $max) {
+   
+    $min-width: 568px;
+    $max-width: 1000px;
+    $min-w: 568;
+    $max-w: 1000;
+  
+     
+    @return calc(#{$min}px + (#{($max - $min)} * ((100vw - #{$min-width}) / (#{$max-w} - #{$min-w}))));
+  }
+@function adaptive-marginPh2($min, $max) {
+   
+    $min-width: 800px;
+    $max-width: 1000px;
+    $min-w: 800;
+    $max-w: 1000;
+  
+     
+    @return calc(#{$min}px + (#{($max - $min)} * ((100vw - #{$min-width}) / (#{$max-w} - #{$min-w}))));
+  }
+@function adaptive-marginMin($min, $max) {
+   
+    $min-width: 360px;
+    $max-width: 500px;
+    $min-w: 360;
+    $max-w: 500;
+  
+     
+    @return calc(#{$min}px + (#{($max - $min)} * ((100vw - #{$min-width}) / (#{$max-w} - #{$min-w}))));
+  }
+@function adaptive-marginM2($min, $max) {
+   
+    $min-width: 360px;
+    $max-width: 480px;
+    $min-w: 360;
+    $max-w: 480;
+  
+     
+    @return calc(#{$min}px + (#{($max - $min)} * ((100vw - #{$min-width}) / (#{$max-w} - #{$min-w}))));
+  }
+
+  
+  
+  
