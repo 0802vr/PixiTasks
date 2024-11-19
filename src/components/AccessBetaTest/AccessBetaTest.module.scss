@@ -1,0 +1,89 @@
+@use '../../style/variables' as vars;
+@use '../../style/adapt' as adapt;
+ 
+.betaTestBox {
+  cursor: url('../assets/cursor/2.png'), pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px;
+  border-radius: 8px;
+  border: 1px solid #404040;
+  margin-top: 20px;
+}
+.betaTestTitle {
+  color:  #FEFEFE;
+  font: 400 adapt.adaptive-margin(32, 42)/0.9 vars.$fontF;
+   
+}
+.betaTestUserQuest {
+  margin-top: 30px;
+}
+.betaTestItems {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.betaTestSubTitle {
+  color: #FEFEFE;
+  font: 500 adapt.adaptive-margin(18, 20)/1.2 vars.$fontR;
+ 
+}
+.betaTestNum {
+  display: flex;
+  font: 500 adapt.adaptive-margin(18, 20)/1.2 vars.$fontR;
+  color:  #34D3D7;
+  
+}
+.betaTestNumDo {
+  border: none;
+}
+.betaTestNumAll {
+  border: none;
+}
+.betaTestProgress {
+  border-radius: 60px;
+  width: 100%;
+  height: 10px;
+  background-color: #404040; 
+}
+
+.progressComplete {
+  border-radius: 60px;
+  height: 100%; 
+  background-color: #34D3D7; 
+  transition: width 0.3s ease; 
+}
+.betaTestText {
+  color: #707070;
+  font: 400 adapt.adaptive-margin(18, 22)/1.2 vars.$fontR;
+  margin-top: 10px;
+ 
+}
+ 
+.betaTestBtn {
+  background-color: #FEFEFE;
+  color: #121212;
+  font: 500 adapt.adaptive-margin(18, 20)/1.2 vars.$fontR;
+  letter-spacing: -0.54px;
+  padding: 9px 0;
+  display: flex;
+  justify-content: center;
+  margin-top: adapt.adaptive-margin(14, 16);
+}
+ 
+@media (max-width:1000px) {
+  
+}
+@media (max-width:800px) {
+   
+}
+@media (max-width:680px) {
+   
+}
+@media (max-width:580px) {
+   
+}
+@media (max-width:480px) {
+   
+  
+}

@@ -1,0 +1,56 @@
+@use '../../style/variables' as vars;
+@use '../../style/adapt' as adapt;
+ 
+.sectionMainMargin {
+    /* max-width: 1400px; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+     
+  }
+  .ProfileNav {
+    display: flex;
+    border-radius: 8px;     
+    border: 2px solid #404040;
+    padding: 6px;
+    margin-top: 40px;
+
+     
+  }
+  .ProfileNavTitle {
+    cursor: url('../assets/cursor/2.png'), pointer;
+    color:  #707070;
+    font-family: vars.$fontR;
+    font-size: adapt.adaptive-margin(18, 22);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;  
+    padding: 15px adapt.adaptive-margin(20, 25);
+    transition: all 0.2s linear;
+   
+  }
+  .ProfileNavTitleActive {
+    color:  #121212;
+    background-color: #34D3D7;
+    border-radius: 6px;
+  }
+   
+
+@media (max-width:1000px) {
+  
+}
+@media (max-width:800px) {
+   
+}
+@media (max-width:680px) {
+   
+}
+@media (max-width:580px) {
+   
+}
+@media (max-width:480px) {
+   
+  
+}

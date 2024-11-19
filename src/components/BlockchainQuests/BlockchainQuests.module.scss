@@ -1,0 +1,123 @@
+@use '../../style/variables' as vars;
+@use '../../style/adapt' as adapt;
+.BlockchainQuests {
+  margin-top: adapt.adaptive-margin(100, 120);
+}
+.questBox {
+  display: flex;
+  gap: 20px;
+  margin-bottom: adapt.adaptive-margin(10, 14);
+ 
+}
+.questTitle {
+  font: 400 adapt.adaptive-margin(40, 50) /1.2 vars.$fontF;
+  color: #FEFEFE;
+  
+}
+.questCount {
+  display: flex;
+  color: #34D3D7;
+  font: 400 adapt.adaptive-margin(40, 50) /1.2 vars.$fontF;
+   
+
+}
+.questCountDo {
+  border: none;
+}
+.questCountAll {
+  border:none;
+}
+.questList {
+  display: flex;
+  flex-direction: column;
+  gap:adapt.adaptive-margin(14, 16);
+  
+}
+.questListItem {
+  display: flex;
+  flex-direction: column;
+  border:#404040 1px solid;
+  border-radius: 8px;
+  padding: 30px;
+}
+.questListItemMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: url('../assets/cursor/2.png'), pointer;
+}
+.questListBox {
+  display: flex;
+  align-items: center;
+}
+.questListImg {
+  width: adapt.adaptive-margin(36, 40);
+  height: adapt.adaptive-margin(36, 40);
+  border-radius: 50%;
+  background-color: #404040;
+  margin-right: 20px;
+  
+}
+.questListImgActive {
+  background-color: #34D3D7;
+}
+.questListTitle {
+  font:500 adapt.adaptive-margin(18, 20) /1.2 vars.$fontR;
+  color:  #FEFEFE;
+  
+}
+.questListLine {
+  transition: all 0.3s ease;
+  width: adapt.adaptive-margin(25, 30);
+  height: adapt.adaptive-margin(15, 18);
+}
+.questListLineActive {
+  path {
+    fill:#34D3D7;
+  }
+}
+.questListModal {
+  display: flex;
+  flex-direction: column;
+  margin-left: adapt.adaptive-margin(56, 60);
+  
+  transition: margin-top 0.2s ease, max-height 0.2s ease, opacity 0.2s ease;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+ 
+.questListModal.show {
+  max-height: 500px;  
+  opacity: 1;
+  margin-top: 10px;
+}
+.questListText {
+  color: rgba(254, 254, 254, 0.80);
+  font:400 adapt.adaptive-margin(18, 20) /1.2 vars.$fontR;
+   
+}
+.questListBtn {
+  margin-top: 20px;
+  background-color: #FEFEFE;
+  font:500 adapt.adaptive-margin(18, 20) /1.3 vars.$fontR;
+  color:  #121212;
+  cursor: url('../assets/cursor/2.png'), pointer;
+  
+}
+@media (max-width:1000px) {
+  
+}
+@media (max-width:800px) {
+   
+}
+@media (max-width:680px) {
+   
+}
+@media (max-width:580px) {
+   
+}
+@media (max-width:480px) {
+   
+  
+}
